@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+height:100%;
+width:100%;
+}
+
+.wrapper{
+    height:100%;
+    width:100%;
+    /* background-color: slateblue; */
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    /* background-color: slategray;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav{
+height:100%;
+width:40%;
+/* background-color: skyblue; */
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.left-nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 1vw;
+    font-weight:900;
+    margin:2vw;
+}
+
+.mid-nav{
+    height: 100%;
+    width:40%;
+    /* background-color: crimson; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.mid-nav h1{
+font-family: cursive;
+font-weight:800;
+}
+
+.right-nav{
+    height: 100%;
+    width:20%;
+    /* background-color:chocolate; */
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.right-nav button{
+   border:none;
+    font-size: 1vw;
+    font-weight:500;
+    margin:3vw 1vw;
+    border-radius: 1vw;
+    padding: 1.2vh 1.5vw;
+}
+.register{
+    background-color: black;
+    color:white;
+}
+
+@media (max-width: 425px) {
+
+    nav {
+        height: 80px;
+        background-color: slategray;
+    }
+
+    .left-nav {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+    .mid-nav {
+        width: 70%;
+        height: 100%;
+        /* background-color: crimson; */
+        padding: 0 3vh;
+    }
+
+    .mid-nav h1 {
+        font-size: 2.5vh;
+    }
+    .menubutton {
+        display: block;
+        width: 30%;
+        height: 100%;
+        /* background-color: deeppink; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 3vh;
+    }
+
+    .menubutton i {
+        font-size: 2.5vh;
+    }
+
+
+    .dropdown {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        background-color: slategray;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .dropdown a {
+        font-size: 2.3vh;
+        margin: 2vh 3vh;
+    }
+}
+
+
+ 
